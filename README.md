@@ -30,5 +30,5 @@ $hashed = BCrypt::hash($password);
 $check = BCrypt::verify($password, $hashed_password_value);
 
 // Use a stronger salt (2 ^ 24 iterations)
-$hashed = BCrypt::hash($password, Bcrypt::salt(24));
+$hashed = BCrypt::hash($password, BCrypt::salt(24));
 ```
